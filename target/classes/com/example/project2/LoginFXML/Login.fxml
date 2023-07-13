@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="597.0" style="-fx-background-color: #5392c9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.Controller.Login.LoginController">
+         <children>
+            <Label layoutX="112.0" layoutY="159.0" text="Tài khoản " textFill="#2f2acd">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="221.0" text="Mật khẩu" textFill="#2f2acd">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="242.0" layoutY="154.0" prefHeight="25.0" prefWidth="198.0" promptText="Tài khoản">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="242.0" layoutY="216.0" prefHeight="25.0" prefWidth="198.0" promptText="Mật khẩu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="buttonLogin" layoutX="256.0" layoutY="285.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: #604ae8;" stylesheets="@../../../../CSS/main.css" text="Đăng nhập">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="wrongLogin" layoutX="242.0" layoutY="122.0" textFill="#eed114">
+               <font>
+                  <Font name="Calibri Italic" size="16.0" />
+               </font>
+            </Label>
+      <Button fx:id="buttonSignup" layoutX="459.0" layoutY="167.0" mnemonicParsing="false" onAction="#userSignup" prefHeight="75.0" prefWidth="112.0" style="-fx-background-color: #704ae8;" stylesheets="@../../../../CSS/main.css" text="Đăng ký" AnchorPane.bottomAnchor="217.0" AnchorPane.leftAnchor="459.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="167.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="245.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../CSS/picture/login.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="108.0" layoutY="383.0" text="Không cần tài khoản!" textFill="#6f0c59">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+            <Button layoutX="316.0" layoutY="376.0" onAction="#choi_ngay" style="-fx-background-color: #7b24a1;" stylesheets="@../../../../CSS/main.css" text="Chơi ngay" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+            </Button>
+         </children>
+</AnchorPane>

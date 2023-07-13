@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="597.0" style="-fx-background-color: #5392c9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.Controller.Login.SignUpController">
+   <children>
+      <Label layoutX="122.0" layoutY="150.0" text="Họ tên" textFill="#2f2acd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hoTen" layoutX="262.0" layoutY="150.0" prefHeight="25.0" prefWidth="198.0" promptText="Họ tên">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonOK" layoutX="276.0" layoutY="539.0" mnemonicParsing="false" onAction="#signUpOK" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: #604ae8;" stylesheets="@../../../../CSS/main.css" text="Xác nhận">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="233.0" layoutY="13.0" prefHeight="75.0" prefWidth="181.0" text="Đăng Ký" textFill="#8a4b5a">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="signupTB" alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="88.0" prefHeight="27.0" prefWidth="472.0" textFill="#0d0000">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#signupBack" prefHeight="66.0" prefWidth="77.0" style="-fx-background-color: #5392c9;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="59.0" fitWidth="31.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../CSS/picture/back_icon.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="pass2" layoutX="263.0" layoutY="418.0" prefHeight="25.0" prefWidth="198.0" promptText="Nhập lại mật khẩu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="username" layoutX="262.0" layoutY="239.0" prefHeight="25.0" prefWidth="198.0" promptText="Tài khoản">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="122.0" layoutY="243.0" text="Tài khoản" textFill="#2f2acd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="340.0" text="Mật khẩu" textFill="#2f2acd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pass1" layoutX="262.0" layoutY="336.0" prefHeight="25.0" prefWidth="198.0" promptText="Mật khẩu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

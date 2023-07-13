@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1500.0" styleClass="board-thidau" stylesheets="@../../../../CSS/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.Controller.LuyenTap.LuyenTapTDController">
+    <children>
+        <GridPane fx:id="boardPanel_P1" alignment="CENTER" gridLinesVisible="true" layoutX="90.0" layoutY="110.0" maxHeight="630.0" maxWidth="630.0" minHeight="630.0" minWidth="630.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+
+
+        <GridPane fx:id="boardPanel_P2" alignment="CENTER" gridLinesVisible="true" layoutX="820.0" layoutY="110.0" maxHeight="630.0" maxWidth="630.0" minHeight="630.0" minWidth="630.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <Pane layoutX="720.0" prefHeight="850.0" prefWidth="100.0">
+            <children>
+                <Button layoutY="269.0" mnemonicParsing="false" onAction="#StartButton" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #1d2add;" stylesheets="@../../../../CSS/main.css" text="Bắt đầu" textFill="#b4c344">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></Button>
+                <Button layoutX="16.0" layoutY="752.0" mnemonicParsing="false" onAction="#backBT" prefHeight="30.0" prefWidth="70.0" stylesheets="@../../../../CSS/main.css" text="Thoát" textFill="#dd1c1c">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Button>
+                <Label fx:id="thoiGian" alignment="CENTER" layoutX="-37.0" layoutY="24.0" prefHeight="39.0" prefWidth="175.0" text="00:00:00" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="1.0" layoutY="123.0" prefHeight="30.0" prefWidth="100.0" text="Độ khó:">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="boxB" layoutX="1.0" layoutY="170.0" prefHeight="40.0" prefWidth="100.0" />
+                <Button layoutX="11.0" layoutY="474.0" mnemonicParsing="false" onAction="#P1_KT" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: d82279;" stylesheets="@../../../../CSS/main.css" text="Kiểm tra" textFill="#b4c344">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font></Button>
+            </children>
+        </Pane>
+        <Label fx:id="P1_lb" alignment="CENTER" layoutX="90.0" layoutY="769.0" prefHeight="40.0" prefWidth="630.0" text="Label">
+            <font>
+                <Font name="System Italic" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="P2_lb" alignment="CENTER" layoutX="820.0" layoutY="769.0" prefHeight="40.0" prefWidth="630.0" text="Label">
+            <font>
+                <Font name="System Italic" size="22.0" />
+            </font>
+        </Label>
+        <Pane prefHeight="850.0" prefWidth="90.0" />
+        <Pane layoutX="1450.0" prefHeight="850.0" prefWidth="90.0" />
+      <Label fx:id="thoiGian1" alignment="CENTER" layoutX="318.0" layoutY="47.0" prefHeight="39.0" prefWidth="175.0" text="00:00" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="thoiGian2" alignment="CENTER" layoutX="1048.0" layoutY="47.0" prefHeight="39.0" prefWidth="175.0" text="00:00" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

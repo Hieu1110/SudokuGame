@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" styleClass="main-board-client" stylesheets="@../../../../CSS/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.Controller.Client.ClientController">
+   <children>
+      <Button layoutX="835.0" mnemonicParsing="false" onAction="#BackBT" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #f40c0c;" text="Thoát">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="239.0" layoutY="386.0" mnemonicParsing="false" onAction="#VaoPhongBT" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: f8f1a5;" text="Vào phòng" textFill="#9a0505">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="548.0" layoutY="386.0" mnemonicParsing="false" onAction="#TaoPhongBT" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: f8f1a5;" text="Tạo phòng" textFill="#9a0505">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Pane layoutX="506.0" layoutY="22.0" prefHeight="300.0" prefWidth="329.0">
+         <children>
+            <Label layoutX="15.0" layoutY="35.0" prefHeight="32.0" prefWidth="183.0" text="Tên người chơi :" textFill="#5d00ff">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="user_name" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="65.0" prefHeight="32.0" prefWidth="253.0" text="Label" textFill="#5d00ff">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="120.0" prefHeight="27.0" prefWidth="37.0" text="ID :" textFill="#9700ff">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="user_ID" layoutX="128.0" layoutY="150.0" prefHeight="27.0" prefWidth="189.0" text="Label" textFill="#9700ff">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="222.0" prefHeight="21.0" prefWidth="114.0" text="Khu vực :" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="244.0" prefHeight="21.0" prefWidth="114.0" text="Việt Nam" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <TextArea fx:id="area_tb" layoutX="39.0" layoutY="31.0" prefHeight="300.0" prefWidth="400.0" />
+   </children>
+</AnchorPane>

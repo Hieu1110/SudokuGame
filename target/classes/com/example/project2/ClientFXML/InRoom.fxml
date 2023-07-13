@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" styleClass="main-board-inroom" stylesheets="@../../../../CSS/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.Controller.Client.InRoom">
+   <children>
+      <Label fx:id="ten_player1" alignment="CENTER" layoutX="58.0" layoutY="325.0" prefHeight="50.0" prefWidth="250.0" text="Player 1">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="ten_player2" alignment="CENTER" layoutX="593.0" layoutY="325.0" prefHeight="50.0" prefWidth="250.0" text="Player 2">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_player1" alignment="CENTER" layoutX="133.0" layoutY="396.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_player2" alignment="CENTER" layoutX="668.0" layoutY="396.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="860.0" mnemonicParsing="false" onAction="#BackBT" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: ff0000;" text="X">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="375.0" layoutY="396.0" mnemonicParsing="false" onAction="#StartBT" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #d39d9d;" text="Bắt đầu" textFill="#5b1818">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="338.0" layoutY="68.0" prefHeight="32.0" prefWidth="108.0" text="ID phòng: " textFill="#860b0b">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_room" alignment="CENTER" layoutX="473.0" layoutY="68.0" text="id" textFill="#860b0b">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

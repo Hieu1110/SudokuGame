@@ -1,0 +1,39 @@
+.main-content-board {
+    -fx-background-image: url("picture/background_sudoku.jpg");
+    -fx-background-position: center;
+    -fx-background-size: 1300;
+}
+
+.main-content-board-home {
+    -fx-background-image: url("picture/BGHome.png");
+    -fx-background-position: center;
+    -fx-background-size: 1300;
+}
+
+
+.button:hover {
+-fx-scale-x: 110%;
+-fx-scale-y: 110%;
+}
+
+.board-thidau {
+    -fx-background-image: url("picture/Ice-background.jpg");
+    -fx-background-position: center;
+    -fx-background-size: 1600;
+}
+
+.main-board-client {
+    -fx-background-image: url("picture/BG_C_Home.jpg");
+    -fx-background-position: center;
+    -fx-background-size: 1000;
+}
+
+.main-board-inroom {
+    -fx-background-image: url("picture/Background_Inroom.png");
+    -fx-background-position: center;
+    -fx-background-size: 1000;
+}
+
+.label-border {
+    -fx-border: width 5;
+}

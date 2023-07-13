@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="750" prefWidth="1000" styleClass="main-content-board" stylesheets="@../../../../CSS/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.Controller.LuyenTap.LuyenTapController">
+
+    <children>
+        <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" stylesheets="@../../../../CSS/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <bottom>
+                <Pane prefHeight="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="labelTB" alignment="CENTER" layoutX="178.0" layoutY="-6.0" minWidth="50.0" prefHeight="58.0" prefWidth="669.0" textFill="#ff0505">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            </bottom>
+            <right>
+                <Pane prefHeight="579.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="-36.0" layoutY="-7.0" prefHeight="540.0" prefWidth="80.0">
+                     <children>
+                        <Button fx:id="buttonso1" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="1" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonso2" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="2" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonso3" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="3" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonso4" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="4" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonso5" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="5" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonso6" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="6" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonso7" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="7" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonso8" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="8" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonso9" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" text="9" textFill="#00108d">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></Pane>
+            </right>
+            <top>
+                <HBox alignment="CENTER" prefHeight="80.0" prefWidth="952.0" spacing="30.0" BorderPane.alignment="CENTER">
+                    <children>
+                  <Label text="Độ khó:">
+                     <font>
+                        <Font name="System Italic" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="-20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="boxB" prefHeight="40.0" prefWidth="128.0" />
+                  <Button fx:id="startButton" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" onAction="#startClick" prefHeight="45.0" prefWidth="103.0" text="Bắt đầu">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="keyButton" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" onAction="#keyClick" prefHeight="45.0" prefWidth="71.0" text="Giải">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                        <Button fx:id="checkButton" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" onAction="#checkClick" prefHeight="45.0" prefWidth="102.0" text="Kết quả">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                        <Button fx:id="resetButton" stylesheets="@../../../../CSS/main.css" mnemonicParsing="false" onAction="#resetClick" prefHeight="40.0" prefWidth="67.0" text="Reset">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Label fx:id="thoiGian" text="00:00:00">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" right="-50.0" />
+                     </HBox.margin>
+                  </Label>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                </HBox>
+            </top>
+         <left>
+            <Pane prefWidth="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="backButton" stylesheets="@../../../../CSS/main.css" layoutX="6.0" mnemonicParsing="false" onAction="#backBT" prefHeight="31.0" prefWidth="55.0" style="-fx-background-color: #74bbf4;" text="Back" textFill="#da19c4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+         </left>
+         <center>
+            <GridPane fx:id="boardPanel" alignment="CENTER" gridLinesVisible="true" maxHeight="630.0" maxWidth="630.0" minHeight="630.0" minWidth="630.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="210.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="210.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </center>
+        </BorderPane>
+    </children>
+
+</AnchorPane>
